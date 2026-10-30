@@ -1,7 +1,10 @@
 
-# Program to check whether a string is a palindrome
+import sys
 
-string = input("Enter a string: ")
+if len(sys.argv) > 1:
+    string = sys.argv[1]
+else:
+    string = input("Enter a string: ")
 
 if string == string[::-1]:
     print(string, "is a palindrome")
